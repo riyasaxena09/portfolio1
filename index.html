@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(82, 4, 55);
+            color: aliceblue;
+        }
+        nav{
+            display:flex;
+justify-content: space-around;
+align-items: center;
+height: 80px;
+background-color: rgb(116, 114, 114);
+
+        }
+        .left{
+            font-size: 4rem;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            font-size: 1.8rem;
+        }
+      nav ul li{
+list-style: none;
+margin: 0 23px;
+
+        }
+        nav ul li a{
+text-decoration: none;
+color:black
+
+        }
+        nav ul li:hover{
+        color: blue;
+            font-size: 1.5rem;
+        }
+      .sec{
+          justify-content: space-around;
+          display: flex;
+          margin:23px 0;  
+         align-items: center;
+        }
+        .lsec{
+        
+            width:30%;
+            margin-left: 150px;
+            font-size: 50px;
+            margin-top: 100px;
+        }
+      
+        .rsec{
+           
+            width: 40%; 
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+        .rsec img{
+            width: 40%; 
+        }
+        .purple{
+            color:rgb(232, 133, 202);
+        }
+        #element{
+            color:rgb(211, 107, 188);
+        }
+        button{
+            background-color: black;
+            color: antiquewhite;
+            font-size: 30px;
+            border-radius: 5px;
+            margin:10px;
+            margin-top:50px;
+            padding: 3px;
+        }
+section{
+    margin:50px;
+}
+HR{
+    margin-top: 130px;
+}
+.h1{
+color:white;
+height: 80px;
+font-size: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom:100px;
+background-color: grey;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.img1{
+    width:150px;
+    height:130px;
+ 
+}
+.img2{
+    width:130px;
+    height:130px;
+}
+.css{
+    margin-top: 30px;
+    margin-left:40px;
+}
+.js{
+    margin-top: 30px;
+    margin-left:10px;  
+}
+.b{
+    background-color: rgba(217, 203, 5, 0.833);
+    border-radius: 3px;
+    font-size: 50px;
+    padding: 8px;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+Riya Saxena's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="./quali.html">Educational Qualification</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="sec">
+        <div class="lsec">Hy, My Name is <span class="purple">Riya</span>
+            <div>I am a Passionate <span id="element"></span></div>
+            <div>
+            
+            <a href="https://drive.google.com/drive/folders/1rU75UaU1A_E3RlKsjNnq0toE2_MzOw8O?usp=drive_link"><button>Download CV</button></a>
+        </div>
+        </div>
+        <div class="rsec">
+            <img alt="" src="image2.png">
+        </div>
+    </section>
+   <div class="HR">
+    <hr>
+   </div>
+    <section>
+
+        <div class="h1">
+Technical Skills
+</div>
+<div class="flex">
+
+<div ><img class="img1" src="./CSS_logo_PNG7.png">
+<h1 class="css">CSS</h1></div>
+<div ><img class="img1" src="./HTML.png">
+    <h1 class="css">HTML</h1></div>
+<div ><img class="img2" src="./JavaScript.png">
+    <h1 class="js">JavaScript</h1></div>
+</div>
+
+<div class="flex">
+
+    <div ><img class="img1" src="./pngwing.com.png">
+    <h1 class="css">C++</h1></div>
+    <div ><img class="img1" src="./bootstrap-logo.png">
+        <h1 class="css">Bootstrap</h1></div>
+    <div ><img class="img2" src="./react.avif">
+        <h1 class="js">React</h1></div>
+    </div>
+    </section>
+    <section>
+
+        <div class="h1">
+Managerial Skills
+</div>
+<div class="flex">
+
+<div >
+<h1 class="b">Leadership </h1></div>
+<div >
+    <h1 class="b"> Project management</h1></div>
+<div >
+    <h1 class="b">Planning</h1></div>
+</div>
+<div class="flex">
+
+    <div >
+    <h1 class="b">Problem solving</h1></div>
+    <div >
+        <h1 class="b">Coordinating</h1></div>
+    <div >
+        <h1 class="b">Technical knowledge</h1></div>
+    </div>
+</section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Frontend developer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
