@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    
+           body{
+               background-color: rgb(82, 4, 55);
+               color: aliceblue;
+           }
+           nav{
+               display:flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 80px;
+   background-color: rgb(116, 114, 114);
+   
+           }
+           .left{
+               font-size: 4rem;
+           }
+           ul{
+               display: flex;
+               justify-content: center;
+               font-size: 1.8rem;
+           }
+         nav ul li{
+   list-style: none;
+   margin: 0 23px;
+   
+           }
+           nav ul li a{
+   text-decoration: none;
+   color:black
+   
+           }
+           nav ul li:hover{
+           color: blue;
+               font-size: 1.5rem;
+           }
+          .e{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin: 3rem;
+            
+          }
+             #element{
+  background-color: rgb(8, 5, 5);
+font-size: 30px;
+align-items: center;
+border-radius: 20px;
+padding: 0.8rem;
+           }
+           #element1{
+  background-color: rgb(9, 18, 19);
+font-size: 30px;
+align-items: center;
+border-radius: 20px;
+padding: 0.8rem;
+           }
+           #element2{
+            padding: 0.8rem;
+  background-color: rgb(6, 3, 6);
+font-size: 30px;
+align-items: center;
+border-radius: 10px;
+           }
+           #element3{
+            padding: 0.8rem;
+  background-color: rgb(6, 3, 6);
+font-size: 30px;
+align-items: center;
+border-radius: 10px;
+           }
+           img{
+            width:50px;
+           }
+   </style>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+Riya Saxena's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="./quali.html">Educational Qualification</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+       
+      <div class="e">  <span id="element3"></span></div>
+      <div class="e">  <span id="element"></span></div>
+      <div class="e">  <span id="element1"></span></div>
+      <div class="e">  <span id="element2"></span></div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element3', {
+        strings: ['<img src="./phone-flat.png">Phone Number-6398888414'],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: [' <img src="Gmail_logo_PNG20.png">Email-riyasaxenabdn2002@gmail.com <a href="https://mail.google.com/mail/u/0/#inbox"> <button>Link</button></a>'],
+          typeSpeed: 50,
+        });
+      </script>
+       <script>
+        var typed = new Typed('#element1', {
+          strings: ['<img src="Github_logo_PNG7.png">Github-https://github.com/riyasaxena09 <a href="https://github.com/riyasaxena09"> <button>Link</button></a>'],
+          typeSpeed: 50,
+        });
+      </script>
+      <script>
+        var typed = new Typed('#element2', {
+          strings: ['<img src="./linkedin.png">LinkedIn url-www.linkedin.com/in/riya-saxena-454167258 https://github.com/riyasaxena09 <a href="www.linkedin.com/in/riya-saxena-454167258"> <button>Link</button></a>'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
